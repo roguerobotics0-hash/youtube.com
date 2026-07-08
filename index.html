@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  
+  <header>
+    <div class="logo" onclick="window.location.href='https://youtube.com'">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo" class="yt-logo-img">
+    </div>
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Search" onkeyup="searchVideos()">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+    <div class="icons">
+      <i class="fas fa-video"></i>
+      <i class="fas fa-bell"></i>
+      <div class="avatar">U</div>
+    </div>
+  </header>
+
+  <div class="watch-container">
+    
+    <div class="main-video-section">
+      <div class="video-player" onclick="window.location.href='https://youtube.com'">
+        <img id="playerVideo" src="" alt="Main Video Thumbnail">
+        <div class="play-overlay"><i class="fas fa-play"></i></div>
+      </div>
+      
+      <h1 id="videoTitle" class="video-title">Video Title</h1>
+      
+      <div class="video-meta-bar">
+        <div class="channel-group">
+          <div class="avatar channel-avatar">C</div>
+          <div class="channel-details">
+            <span id="videoChannel" class="channel-name">Channel Name</span>
+            <span class="subscriber-count">75 subscribers</span>
+          </div>
+          <button class="subscribe-btn">Subscribe</button>
+        </div>
+        
+        <div class="action-buttons">
+          <div class="pill-group">
+            <button class="pill-btn left-pill">
+              <i class="fas fa-thumbs-up"></i> <span id="videoLikes">17K</span>
+            </button>
+            <button class="pill-btn right-pill">
+              <i class="fas fa-thumbs-down"></i>
+            </button>
+          </div>
+          <button class="pill-btn"><i class="fas fa-share"></i> Share</button>
+          <button class="pill-btn"><i class="fas fa-download"></i> Download</button>
+        </div>
+      </div>
+
+      <div class="description-box">
+        <p><strong id="videoViews">134K views</strong> • <strong id="videoTime">3 days ago</strong></p>
+        <p>Thanks for watching! This interface utilizes optimized grid layouts and authentic interface details to mirror premium native playback standards.</p>
+      </div>
+    </div>
+
+    <div class="sidebar-recommendations">
+      <h3>Up Next</h3>
+      <div id="recommendationsGrid" class="compact-grid">
+        </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
